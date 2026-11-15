@@ -50,4 +50,11 @@ ul {
 .header {
   display: flex;
   justify-content: space-between;
+  padding: 8px;
+}
+
+#headerRightSide,
+#headerLeftSide {
+  display: flex;
+  gap: 16px;
 }
