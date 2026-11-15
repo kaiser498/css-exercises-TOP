@@ -24,6 +24,67 @@ body {
 
 .card {
   border: 1px solid #eee;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, .06);
   border-radius: 4px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header,
+.footer {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  font-size: 32px;
+  font-weight: 900;
+  padding-left: 16px;
+}
+
+.footer {
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-grow: 1;
+}
+
+.sidebar {
+  width: 300px;
+  flex-shrink: 0;
+  font-size: 24px;
+}
+
+.sidebar ul {
+  padding: 16px;
+  margin: 0;
+}
+
+.sidebar ul li {
+  list-style-type: none;
+  margin-bottom: 16px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.card {
+  width: 300px;
+  padding: 20px;
+  font-weight: 500;
+}
+
+.contentBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  padding: 48px;
 }
